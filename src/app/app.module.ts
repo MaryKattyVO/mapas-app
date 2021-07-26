@@ -10,12 +10,17 @@ import {MatCardModule} from '@angular/material/card';
 
 // google maps
 import { AgmCoreModule } from '@agm/core';
+import { MapaEditarComponent } from './components/mapa/mapa-editar.component';
 
 
 @NgModule({
+  entryComponents: [
+    MapaEditarComponent
+  ],
   declarations: [
     AppComponent,
-    MapaComponent
+    MapaComponent,
+    MapaEditarComponent
   ],
   imports: [
     BrowserModule,
