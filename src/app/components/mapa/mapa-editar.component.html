@@ -1,1 +1,15 @@
-<p>mapa-editar works!</p>
+<form [formGroup]="forma">
+    <mat-form-field  appearance="fill">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="Título" formControlName="titulo">
+    </mat-form-field>
+  
+    <mat-form-field  appearance="fill">
+      <mat-label>Leave a comment</mat-label>
+      <textarea rows="3" matInput placeholder="Descripción" formControlName="desc"></textarea>
+    </mat-form-field>
+
+    <button (click)="guardarCambios()" mat-raised-button color="primary">Editar</button>
+    <button (click)="onNoClick()" mat-raised-button color="warn">Cancelar</button>
+</form>
+  

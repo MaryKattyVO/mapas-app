@@ -11,6 +11,7 @@ import {MatCardModule} from '@angular/material/card';
 // google maps
 import { AgmCoreModule } from '@agm/core';
 import { MapaEditarComponent } from './components/mapa/mapa-editar.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { MapaEditarComponent } from './components/mapa/mapa-editar.component';
     BrowserAnimationsModule,
     MaterialModule,
     MatCardModule,
+    ReactiveFormsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBE8golTHxt78wsseuu4VaDo2ZUI0tU2Io'
     })
